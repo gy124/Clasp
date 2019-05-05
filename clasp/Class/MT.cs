@@ -10,7 +10,7 @@ namespace clasp
 {
     public static class MT
     {
-        #region 板卡定义
+        #region 板卡定义是 
         public static CARD CARD_ECI2400_0 = new CARD(0, "192.168.0.100", 4, 24, 8, CARD.BRAND.ZMOTION, CARD.TYPE.MOTION, "ECI2400", "转台");
         public static CARD CARD_ECI2400_1 = new CARD(1, "192.168.0.101", 4, 24, 8, CARD.BRAND.ZMOTION, CARD.TYPE.MOTION, "ECI2400", "左光箱");
         public static CARD CARD_ECI2400_2 = new CARD(2, "192.168.0.102", 4, 24, 8, CARD.BRAND.ZMOTION, CARD.TYPE.MOTION, "ECI2400", "右光箱");

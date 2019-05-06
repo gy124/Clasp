@@ -94,15 +94,15 @@ namespace clasp
         public static GPIO GPIO_IN_OFF_NULL = new GPIO(0, (CARD)null, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.NULL, "IN_OFF_NULL", GPIO.IO_STA.IN_OFF);
         #region OUT  
         //上料
-        public static GPIO GPIO_OUT_UL_Z_RESET = new GPIO(0, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "上料Z轴复位");
-        public static GPIO GPIO_OUT_UL_ZK_N1 = new GPIO(5, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "上料吸头真空1");
-        public static GPIO GPIO_OUT_UL_ZK_N2 = new GPIO(4, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "上料吸头真空2");
-
-        public static GPIO GPIO_OUT_UL_PZK_N1 = new GPIO(7, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "上料吸头破真空1");
-        public static GPIO GPIO_OUT_UL_PZK_N2 = new GPIO(6, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "上料吸头破真空2");
-
-        public static GPIO GPIO_OUT_UL_FD_TRAY = new GPIO(1, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "供料料盘夹紧");
-
+        public static GPIO GPIO_OUT_TEST_P_UP_H = new GPIO(0, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "测试正向抬升下位气缸");
+        public static GPIO GPIO_OUT_TEST_P_UP_D = new GPIO(1, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "测试正向抬升上位气缸");
+        //下料
+        public static GPIO GPIO_OUT_TEST_M_UP = new GPIO(2, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "测试中间抬升气缸");
+        public static GPIO GPIO_OUT_TEST_3 = new GPIO(3, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "未定义");
+        public static GPIO GPIO_OUT_TEST_U_DWN = new GPIO(4, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "测试反向下压气缸");
+        public static GPIO GPIO_OUT_TEST_P_GET = new GPIO(5, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "测试正向接料气缸");
+        public static GPIO GPIO_OUT_TEST_P_DWN = new GPIO(6, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "测试正向下压气缸");
+        public static GPIO GPIO_OUT_UL_PZK_N1 = new GPIO(7, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "上料吸头破真空1");      
         //按键
         public static GPIO GPIO_OUT_KL_START = new GPIO(0, CARD_ECI2600_3, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "开始按键灯");
         public static GPIO GPIO_OUT_KL_STOP = new GPIO(1, CARD_ECI2600_3, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "停止按键灯");
@@ -117,9 +117,7 @@ namespace clasp
         public static GPIO GPIO_OUT_UL_CAM_DW = new GPIO(15, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "下相机触发");
         public static GPIO GPIO_OUT_UL_CAM_BK = new GPIO(14, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "相机1触发");
 
-        //下料
-        public static GPIO GPIO_OUT_DL_OK_TRAY = new GPIO(2, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "OK料盘夹紧");
-        public static GPIO GPIO_OUT_DL_NG_TRAY = new GPIO(3, CARD_DMC3800_5, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.MT_CARD, "NG料盘夹紧");
+        ;
         //夹爪
         public static GPIO GPIO_OUT_DL_HD_HD1 = new GPIO(0, CARD_ECI0064_4, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.IO_CARD, "下料夹爪1");
         public static GPIO GPIO_OUT_DL_HD_HD2 = new GPIO(1, CARD_ECI0064_4, GPIO.IO_DIR.OUT, GPIO.IO_TYPE.IO_CARD, "下料夹爪2");

@@ -12,15 +12,16 @@ namespace clasp
     }
     public static class WsTest
     {
-        public static bool is_need_turn = false;//正向模组
+        public static bool is_need_turn = false;//正反向模组判断
+        public static EM_SYS_STA status;
          static void run()
         {
+            
             for (int i = 0; i < 50; i++)
             {
                 Thread.Sleep(50);
             }
-            
-               
+            status = EM_SYS_STA.STANDBY;
             ;
         }
         static Task TestTask = new Task(run);
@@ -32,8 +33,9 @@ namespace clasp
                 if (TestTask != null) TestTask.Dispose();
                 TestTask = new Task(run);
                 // brun = true;
+                status = EM_SYS_STA.RUN;
                 TestTask.Start();
-                // status = EM_STA.BUSY;
+                
 
             }
 
